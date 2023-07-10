@@ -1,4 +1,5 @@
 set number
+set relativenumber
 syntax on
 
 set autoindent
@@ -11,16 +12,15 @@ set showmode
 set showmatch
 set hlsearch
 set nobackup
-
 set wildmenu
-set wildmode=list:longest
+set wildmode=longest:full,full
 
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O<Tab>
-inoremap {{     {
-inoremap {}     {}
+"inoremap {      {}<Left>
+"inoremap {<CR>  {<CR>}<Esc>O<Tab>
+"inoremap {{     {
+"inoremap {}     {}
 
-inoremap (		()<Left>
-inoremap ))		<Esc><s-a>
+"inoremap (		()<Left>
+"inoremap ))		<Esc><s-a>
 
-vnoremap {		c{<CR><Esc>pi}
+"vnoremap {		c{<CR><Esc>pi}
